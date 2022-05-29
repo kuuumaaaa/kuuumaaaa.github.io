@@ -51,9 +51,9 @@ jobs:
     # これを回避するために.nojekyllファイルをoutディレクトリに作る
     - name: add nojekyll
       run: |
-        ls ./out
-        touch ./portfolio/out/.nojekyll
-        ls ./out
+        ls -a ./out
+        touch ./out/.nojekyll
+        ls -a ./out
 
     # gh-pagesブランチにoutディレクトリの中身をプッシュする
     # gh-pagesブランチは自動的に作成される
