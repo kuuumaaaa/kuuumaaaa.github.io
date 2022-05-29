@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { FacebookShareButton,LinkedinShareButton,EmailShareButton } from 'react-share';
 import { FacebookIcon,LinkedinIcon,EmailIcon } from 'react-share';
 
@@ -16,7 +15,7 @@ export const Contact = () => {
             <LinkedinIcon size={32} round={true} />
           </LinkedinShareButton>
           <Link href="https://github.com/kuuumaaaa">
-            <Image src="/GitHub-Mark.png" width={32} height={32}/>
+            <img src="/GitHub-Mark.png" width={32} height={32}/>
           </Link>
           <EmailShareButton url="kuuumaaaa520@gmail.com" title="Email">
             <EmailIcon size={32} round={true} />
