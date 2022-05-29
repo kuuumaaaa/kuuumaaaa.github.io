@@ -46,11 +46,14 @@ jobs:
     - name: export
       run: npm run export
 
-    # # しかしGitHub Pagesの仕様として_から始まるディレクトリが見えず404となる
-    # # つまりHTMLからJSを読み込めない
-    # # これを回避するために.nojekyllファイルをoutディレクトリに作る
-    # - name: add nojekyll
-    # - run: touch ./out/.nojekyll
+    # しかしGitHub Pagesの仕様として_から始まるディレクトリが見えず404となる
+    # つまりHTMLからJSを読み込めない
+    # これを回避するために.nojekyllファイルをoutディレクトリに作る
+    - name: add nojekyll
+    - run: |
+      ls ./out
+      touch ./out/.nojekyll
+      ls ./out
         
     # gh-pagesブランチにoutディレクトリの中身をプッシュする
     # gh-pagesブランチは自動的に作成される
