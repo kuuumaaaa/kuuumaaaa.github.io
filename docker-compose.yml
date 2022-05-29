@@ -1,6 +1,6 @@
 version: '3'
 services:
-  protfolio-app:
+  portfolio-app:
     build:
       context: .
       dockerfile: Dockerfile
