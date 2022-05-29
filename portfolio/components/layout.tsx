@@ -1,11 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/navbar'
+import { ReactElement } from 'react'
 
 import styles from '../styles/Home.module.css'
 
+type LayoutProps = Required<{
+  readonly children: ReactElement
+}>
 
-export default function layout ({ children }) {
+export default function layout ({ children }: LayoutProps) {
     return (
         <div className={styles.container}>
             <Head>
