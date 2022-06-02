@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 export default function navbar(){
     return (
         <nav className={styles.headerNav}>
-        <Link href="/">
+        <Link href="/work">
             <a>
                 Works
             </a>

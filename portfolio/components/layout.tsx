@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/navbar'
 import { ReactElement } from 'react'
+import Link from 'next/link'
 
 import styles from '../styles/Home.module.css'
 
@@ -12,16 +13,18 @@ export default function layout ({ children }: LayoutProps) {
     return (
         <div className={styles.container}>
             <Head>
-            <title>Portfolio</title>
-            <meta name="description" content="kuma portfolio" />
-            <link rel="icon" href="/favicon.ico" />
+              <title>Portfolio</title>
+              <meta name="description" content="kuma portfolio" />
+              <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <header className={styles.header}>
-                <p>
-                    Kuma Portfolio
-                </p>
-                {/* <Navbar /> */}
+                <Link href="/">
+                  <p>
+                      Kuma Portfolio
+                  </p>
+                </Link>
+                <Navbar />
             </header>
 
 

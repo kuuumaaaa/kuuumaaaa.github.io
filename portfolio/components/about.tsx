@@ -1,9 +1,9 @@
-import { Contact } from './contact'
+import Contact from './contact'
 
 export default function about (){
     return (
         <div className="selfintro">
-            <h1><span className="name">和木琢磨 Takuma Waki</span></h1>
+            <h2><span className="name">和木琢磨 Takuma Waki</span></h2>
             <p>
                 System Engineer
             </p>
@@ -29,7 +29,7 @@ export default function about (){
                 将来的にはその経験を活かしたマネージメントをできるようになれたらと思っています。
             </p>
             <p>
-                ご気軽にお問い合わせください。
+                ご気軽にご連絡ください。副業についての連絡も大歓迎です。
             </p>
             <Contact />
         </div>

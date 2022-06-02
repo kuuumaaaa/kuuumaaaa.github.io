@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FacebookShareButton,LinkedinShareButton,EmailShareButton } from 'react-share';
 import { FacebookIcon,LinkedinIcon,EmailIcon } from 'react-share';
 
-export const Contact = () => {
+export default function Contact (){
     return(
         <div className="flex justify-center list-none">
           <h2 className="text-center">Contact</h2>
