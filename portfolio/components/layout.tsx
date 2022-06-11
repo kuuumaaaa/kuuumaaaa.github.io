@@ -3,7 +3,7 @@ import Navbar from '../components/navbar'
 import { ReactElement } from 'react'
 import Link from 'next/link'
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/layouts/Home.module.scss'
 
 type LayoutProps = Required<{
   readonly children: ReactElement
@@ -15,6 +15,7 @@ export default function layout ({ children }: LayoutProps) {
             <Head>
               <title>Portfolio</title>
               <meta name="description" content="kuma portfolio" />
+              <meta name='viewpoart' content='width=device-width, initial-scale=1.0, user-scalable=no' />
               <link rel="icon" href="/favicon.ico" />
             </Head>
 
