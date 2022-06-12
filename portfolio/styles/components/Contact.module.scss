@@ -1,0 +1,13 @@
+@import '../variables.scss';
+
+.ContactIcon{
+  padding: 2rem 0rem;
+}
+
+
+@include mq(sm){
+  .ContactIcon{
+  padding: 1rem 0rem;
+  }
+}
+

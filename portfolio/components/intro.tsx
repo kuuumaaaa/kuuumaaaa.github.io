@@ -1,9 +1,10 @@
 import Contact from './contact'
+import styles from '../styles/components/Intro.module.scss'
 
 export default function about (){
     return (
-        <div className="selfintro">
-            <h2><span className="name">和木琢磨 Takuma Waki</span></h2>
+        <div className={styles.selfintro}>
+            <h3 className={styles.h2}>和木琢磨 Takuma Waki</h3>
             <p>
                 System Engineer
             </p>

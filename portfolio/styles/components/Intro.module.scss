@@ -1,0 +1,23 @@
+@import '../variables.scss';
+
+.selfintro p {
+  font-size: 1.0rem;
+}
+
+.selfintro h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+@include mq(sm){
+  .selfintro p {
+    font-size: 0.5rem;
+  }
+  
+  .selfintro h2{
+    font-size: 1.0rem;
+    font-weight: bold;
+  }
+}
+

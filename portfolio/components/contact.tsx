@@ -3,11 +3,11 @@ import Link from 'next/link';
 import { FacebookShareButton,LinkedinShareButton,EmailShareButton } from 'react-share';
 import { FacebookIcon,LinkedinIcon,EmailIcon } from 'react-share';
 
+import styles from '../styles/components/Contact.module.scss'
+
 export default function Contact (){
     return(
-        <div className="flex justify-center list-none">
-          <h2 className="text-center">Contact</h2>
-        <div className="mr-8">
+        <div className={styles.ContactIcon}>
           <FacebookShareButton url="https://m.facebook.com/takuma.waki.9" title="Facebook">
             <FacebookIcon size={32} round={true} />
           </FacebookShareButton>
@@ -21,7 +21,6 @@ export default function Contact (){
             <EmailIcon size={32} round={true} />
           </EmailShareButton>
         </div>
-      </div>
     )
 }
 
